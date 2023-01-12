@@ -1,0 +1,12 @@
+install.packages('tidyverse')
+install.packages('readr')
+install.packages('dplyr')
+install.packages('rio')
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(rio)
+
+b<-import('/Users/keshavbhusal/Downloads/P_BMX.XPT')
+head(b)
+export(b, 'measuredHW_17_20.csv')
